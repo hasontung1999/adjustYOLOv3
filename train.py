@@ -51,8 +51,7 @@ if __name__ == "__main__":
     train_path = data_config["train"]
     valid_path = data_config["valid"]
     class_names = load_classes(data_config["names"])
-
-
+    
     # Initiate model
     model = Darknet(opt.model_def).to(device)
     model.apply(weights_init_normal)
